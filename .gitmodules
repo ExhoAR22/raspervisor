@@ -1,0 +1,3 @@
+[submodule "cultivar"]
+	path = cultivar
+	url = https://github.com/ExhoAR22/cultivar.git

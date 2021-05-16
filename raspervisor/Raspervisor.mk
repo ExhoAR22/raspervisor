@@ -1,0 +1,5 @@
+RASPERVISOR_SRCS_C := $(shell find raspervisor/ -name '*.c')
+RASPERVISOR_OBJS_C := $(patsubst raspervisor/%, obj/raspervisor/%.o, $(RASPERVISOR_SRCS_C))
+RASPERVISOR_SRCS_S := $(shell find raspervisor/ -name '*.S')
+RASPERVISOR_OBJS_S := $(patsubst raspervisor/%, obj/raspervisor/%.o, $(RASPERVISOR_SRCS_S))
+RASPERVISOR_OBJS := $(RASPERVISOR_OBJS_S) $(RASPERVISOR_OBJS_C)
